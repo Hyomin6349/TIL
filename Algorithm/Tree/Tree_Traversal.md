@@ -43,13 +43,14 @@
 
 <br/>
 
-
+![예시1](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcWBZm2%2FbtqvDjCHhCY%2FyrgL9vseQZyAwKxXZKdhEK%2Fimg.png)
 
 - 전위 순회: A → B → D → E → C→ F → G
 - 중위 순회: D → B → E → A → F→ C → G
 - 후위 순회: D → E → B → F→ G → C → A
+<br/>
 
-
+![예시2](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FrAD8p%2FbtqvEquAKpk%2FJmzaHWdLVAoLmkB7foEDyk%2Fimg.png)
 
 - 전위 순회: A → B → D → E → G → C → F
 - 중위 순회: D → B → G → E → A → C→ F
