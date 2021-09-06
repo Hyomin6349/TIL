@@ -32,3 +32,63 @@
     → 도메인은 유일!
 
     → uri에 의해 tag가 유일해 지는데 태그를 사용할 때마다 uri를 붙이는 것은 너무 길기 때문에 접두사를 이용하게 된 것
+
+<br>
+
+## set 태그
+
+```java
+<c:set var="[변수명]" value="[값]"/>
+```
+
+- 임시 변수를 위한 set 태그
+- 단일 태그
+
+<br>
+
+## if 태그
+
+```java
+<c:if test="${startNum!=1}">
+		<a class="btn btn-prev" href="?p=${startNum-1}&t=&q=">이전</a>
+</c:if>
+```
+
+- 조건문은 test 속성 안에 작성
+- else 태그가 따로 없기 때문에 모두 if로 처리해 주어야 함
+
+<br>
+
+## fortokens 태그
+
+```java
+<c:forTokens var="fileName" items="${n.files}" delims="," varStatus="st">
+	<a href="${fileName}">${fileName}</a> 
+	<c:if test="${!st.last }"> / </c:if>
+</c:forTokens>
+```
+
+- n.files를 , 를 구분자로 나누어 token으로 만든다
+- token은 fileName이라는 변수를 사용하여 접근한다
+- st.last 라는 값을 이용해서 마지막 반복문일 때는 / 를 작성하지 않는다
+
+<br>
+
+## format 태그
+
+```java
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+```
+
+```java
+<fmt:formatDate pattern="yy-MM-dd" value="${n.regdate}"></fmt:formatDate>
+```
+
+- value 값을 pattern을 이용하여 formatting 해준다.
+
+```java
+<fmt:formatNumber value="${n.hit}"/>
+```
+
+- 일반적으로 통용되는 3자리씩 끊어서 보여주는 형태로 변환해준다.
+- pattern 속성을 이용하여 원하는 형태로도 숫자를 넣어 줄 수 있다
