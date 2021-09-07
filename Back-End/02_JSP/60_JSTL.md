@@ -74,7 +74,7 @@
 
 <br>
 
-## format 태그
+## format 라이브러리
 
 ```java
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
@@ -92,3 +92,17 @@
 
 - 일반적으로 통용되는 3자리씩 끊어서 보여주는 형태로 변환해준다.
 - pattern 속성을 이용하여 원하는 형태로도 숫자를 넣어 줄 수 있다
+
+<br>
+
+## function 라이브러리
+
+```java
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+```
+
+```java
+<a href="${fileName}">${fn:toUpperCase(fileName)}</a>
+```
+
+- 태그로 사용하는 것이 아닌 el 표기법 안에 접두사를 사용한다.
