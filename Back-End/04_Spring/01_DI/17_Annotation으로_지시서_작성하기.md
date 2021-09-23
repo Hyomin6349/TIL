@@ -18,7 +18,7 @@
 @ComponentScan("spring.di.ui")
 @Configuration
 public class NewlecDIConfig {
-	@Bean
+	@Bean 
 	public Exam exam (){
 		return new NewlecExam();
 	}

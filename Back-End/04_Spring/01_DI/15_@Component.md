@@ -17,7 +17,7 @@
 
 ```java
 @Component("exam2")
-public class NewlecExam implements Exam {
+public class NewlecExam implements Exam { 
 	
 	@Value("20")
 	private int kor;

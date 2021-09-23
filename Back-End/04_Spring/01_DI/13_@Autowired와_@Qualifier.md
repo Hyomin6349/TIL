@@ -49,7 +49,7 @@ public void setExam(Exam exam) {
     		this.exam = exam;
     	}
     ```
-
+ 
 3. setter 메서드 앞에
 
     ```java
