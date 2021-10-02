@@ -39,3 +39,11 @@ public class NewlecExam implements Exam {
 - 그렇다면 xml을 이용한 객체 생성 방식과 어노테이션을 이용한 객체 생성 방식을 혼합하여 사용해야 하는가?
 - 아니다!! 설정 방법은 하나로 통일하는 것이 적합하다. 
 - 그렇다면, annotation으로는 어떻게 객체를 생성해야 하는가?
+
+<br>
+
+## 의미를 가진 Component
+
+- 객체를 생성하라는 의미의 Annotation Component
+- 이 객체가 어떤 역할인지 의미까지 함께 전달가능한 **Service, Controller, Repository**
+- 의미를 함께 전달할 수 있는 위의 Annotation을 사용하는 것이 바람직
